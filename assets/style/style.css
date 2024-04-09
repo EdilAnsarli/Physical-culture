@@ -1,0 +1,674 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(243, 242, 229) !important;
+}
+
+header {
+  width: 100%;
+  height: 96px;
+}
+header #navbar {
+  margin: 0 auto;
+  padding: 24px 0;
+  width: 90%;
+}
+header #navbar .homeMiddle aside {
+  gap: 38px;
+}
+header #navbar .homeMiddle aside a {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: rgb(13, 27, 33);
+}
+header #navbar .comeIn {
+  gap: 8px;
+}
+header #navbar .comeIn span {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20.68px;
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    height: 88px;
+  }
+  header #navbar .idk {
+    display: block !important;
+  }
+  header #navbar .idk svg.hidden {
+    display: inline-block !important;
+  }
+  header #navbar .homeMiddle {
+    display: none !important;
+  }
+  header #navbar .homeMiddle aside a {
+    display: none;
+  }
+  header #navbar .comeIn span {
+    display: none;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  header {
+    height: 106px;
+  }
+  header #navbar .idk {
+    width: 33%;
+    display: block !important;
+    justify-content: flex-start;
+  }
+  header #navbar .idk svg.hidden {
+    display: inline-block !important;
+  }
+  header #navbar .push {
+    width: 33%;
+  }
+  header #navbar .homeMiddle {
+    display: none !important;
+  }
+  header #navbar .homeMiddle aside a {
+    display: none;
+  }
+  header #navbar .comeIn {
+    width: 33%;
+    display: flex;
+    justify-content: flex-end !important;
+  }
+  header #navbar .comeIn span {
+    display: inline-block;
+  }
+}
+#effectButton {
+  gap: 50px;
+  width: 90%;
+  margin: 50px auto;
+}
+#effectButton .effect {
+  gap: 10px;
+}
+#effectButton .effect h1 {
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 34px;
+  line-height: 39.07px;
+  color: rgb(13, 27, 33);
+}
+#effectButton .effect h1 br {
+  display: none;
+}
+#effectButton .effect span {
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgb(0, 0, 0);
+}
+#effectButton .effect span br {
+  display: none;
+}
+#effectButton .withButton {
+  gap: 10px;
+}
+#effectButton .withButton button {
+  width: 250px;
+  height: 43px;
+  gap: 1px;
+  border-radius: 26px;
+  border: 3px solid rgb(13, 27, 33);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18.75px;
+}
+#effectButton .withButton .textSVG {
+  gap: 5px;
+}
+#effectButton .withButton .textSVG p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: rgb(131, 161, 209);
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 640px) {
+  #effectButton .effect h1 {
+    font-size: 68px;
+    line-height: 78.13px;
+  }
+  #effectButton .effect span {
+    font-size: 26px;
+    line-height: 35px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #effectButton .effect h1 br {
+    display: unset;
+  }
+  #effectButton .effect span br {
+    display: unset;
+  }
+}
+#cardsButton {
+  gap: 30px;
+  width: 90%;
+  margin: 0 auto 50px auto;
+}
+#cardsButton .cards {
+  gap: 20px;
+}
+#cardsButton .cards .square img {
+  z-index: -1;
+  width: 143px;
+  height: 140px;
+  border-radius: 9px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#cardsButton .cards .square p.x1 {
+  left: 28px;
+  top: 86px;
+  z-index: 1;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.6px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+#cardsButton .cards .square p.x2 {
+  left: 32px;
+  top: 103px;
+  z-index: 1;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.6px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+#cardsButton .cards .square p.x7 {
+  left: 32px;
+  top: 103px;
+  z-index: 1;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.6px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+#cardsButton .cards .square p.x3 {
+  left: 17px;
+  top: 110px;
+  z-index: 1;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.6px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+#cardsButton .cards .square p.x4 {
+  left: 33px;
+  top: 111px;
+  z-index: 1;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.6px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+#cardsButton .cards .square p.x5 {
+  left: 36px;
+  top: 91px;
+  z-index: 1;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.6px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+#cardsButton .cards .square p.x6 {
+  left: 25px;
+  top: 111px;
+  z-index: 1;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.6px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+#cardsButton button {
+  width: 250px;
+  height: 43px;
+  gap: 1px;
+  border-radius: 26px;
+  border: 1px solid rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.75px;
+  box-shadow: 2px 4px 16px 0px rgba(161, 161, 161, 0.25);
+  background-color: #ffffff;
+}
+
+@media screen and (min-width: 576px) {
+  #cardsButton .cards .square img {
+    width: 299px;
+    height: 167px;
+  }
+  #cardsButton .cards .square p.x1 {
+    left: 54px;
+    top: 126px;
+    font-size: 26px;
+    line-height: 31.2px;
+  }
+  #cardsButton .cards .square p.x2 {
+    left: 89px;
+    top: 124px;
+    font-size: 26px;
+    line-height: 31.2px;
+  }
+  #cardsButton .cards .square p.x7 {
+    left: 100px;
+    top: 127px;
+    font-size: 26px;
+    line-height: 31.2px;
+  }
+  #cardsButton .cards .square p.x3 {
+    left: 68px;
+    top: 127px;
+    font-size: 26px;
+    line-height: 31.2px;
+  }
+  #cardsButton .cards .square p.x4 {
+    left: 98px;
+    top: 130px;
+    font-size: 26px;
+    line-height: 31.2px;
+  }
+  #cardsButton .cards .square p.x5 {
+    left: 52px;
+    top: 127px;
+    font-size: 26px;
+    line-height: 31.2px;
+  }
+  #cardsButton .cards .square p.x6 {
+    left: 86px;
+    top: 128px;
+    font-size: 26px;
+    line-height: 31.2px;
+  }
+}
+@media screen and (min-width: 700px) {
+  #cardsButton .cards {
+    gap: 40px;
+  }
+}
+#smartTariffs {
+  width: 90%;
+  margin: 0 auto 30px auto;
+  gap: 20px;
+}
+#smartTariffs .smart .visible {
+  gap: 12px;
+}
+#smartTariffs .smart .visible h4 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33.6px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+#smartTariffs .smart .visible p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: rgb(13, 27, 33);
+}
+#smartTariffs .tariffs {
+  gap: 20px;
+}
+#smartTariffs .tariffs .hidden .thickBorder {
+  padding: 20px;
+  border-radius: 15px;
+}
+#smartTariffs .tariffs .hidden .thickBorder .bgCol {
+  width: 271px;
+  height: 361px;
+  gap: 20px;
+  padding-top: 35px;
+  border-radius: 15px;
+  border: 6px solid;
+  -o-border-image: linear-gradient(225.4deg, #fedc2a 0%, #dd5789 48.12%, #7a2c9e 93.59%);
+     border-image: linear-gradient(225.4deg, #fedc2a 0%, #dd5789 48.12%, #7a2c9e 93.59%);
+  border-image-slice: 1;
+}
+#smartTariffs .tariffs .hidden .thickBorder .bgCol h4 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: rgb(1, 1, 1);
+}
+#smartTariffs .tariffs .hidden .thickBorder .bgCol p {
+  width: 87%;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: rgb(13, 27, 33);
+}
+#smartTariffs .tariffs .thickBorder {
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+}
+#smartTariffs .tariffs .thickBorder .range.t1 {
+  background: linear-gradient(135deg, #e25544 2.88%, #620c90 98.14%);
+}
+#smartTariffs .tariffs .thickBorder .range.t2 {
+  background: linear-gradient(135deg, #172368 2.88%, #e249af 100%);
+}
+#smartTariffs .tariffs .thickBorder .range.t3 {
+  background: linear-gradient(225.4deg, #fedc2a 0%, #dd5789 48.12%, #7a2c9e 93.59%);
+}
+#smartTariffs .tariffs .thickBorder .range.t4 {
+  background: linear-gradient(47.23deg, #a632b0 3.53%, #faa681 95.41%);
+}
+#smartTariffs .tariffs .thickBorder .range.t5 {
+  background: linear-gradient(47.23deg, #a632b0 3.53%, #faa681 95.41%);
+}
+#smartTariffs .tariffs .thickBorder .range {
+  width: 271px;
+  height: 361px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-top: 50px;
+}
+#smartTariffs .tariffs .thickBorder .range h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+#smartTariffs .tariffs .thickBorder .range .ruble h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 42px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+#smartTariffs .tariffs .thickBorder .range .ruble p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 21.69px;
+  line-height: 26.03px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+#smartTariffs .tariffs .thickBorder .range button {
+  width: 193px;
+  height: 33px;
+  border-radius: 22px;
+  border: 0.83px solid rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 19.92px;
+  background-color: #fff;
+}
+#smartTariffs .tariffs .thickBorder .range button span {
+  background: linear-gradient(135deg, #e25544 2.88%, #620c90 98.14%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 1200px) {
+  #smartTariffs .smart {
+    width: 57%;
+  }
+  #smartTariffs .smart .visible h4 {
+    font-size: 42px;
+    line-height: 50.4px;
+  }
+  #smartTariffs .smart .visible p {
+    font-size: 23px;
+    line-height: 31px;
+  }
+  #smartTariffs .tariffs .thickBorder .range {
+    width: 212px;
+    height: 276px;
+  }
+  #smartTariffs .tariffs .thickBorder .range h3 {
+    font-size: 21px;
+    line-height: 25.2px;
+    color: rgb(255, 255, 255);
+  }
+  #smartTariffs .tariffs .thickBorder .range .ruble h2 {
+    font-size: 24.76px;
+    line-height: 29.71px;
+  }
+  #smartTariffs .tariffs .thickBorder .range .ruble p {
+    font-size: 15.33px;
+    line-height: 18.39px;
+  }
+  #smartTariffs .tariffs .thickBorder .range button {
+    width: 136px;
+    height: 23px;
+    border-radius: 15.33px;
+    border: 0.59px solid rgb(255, 255, 255);
+    font-size: 12px;
+    line-height: 14.06px;
+  }
+}
+.addingPanel {
+  width: 90%;
+  margin: 0 auto;
+}
+.addingPanel button.alone {
+  width: 181px;
+  height: 43px;
+  border-radius: 23px;
+  box-shadow: 2px 4px 16px 0px rgba(161, 161, 161, 0.25);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18.75px;
+  color: rgb(13, 27, 33);
+  background-color: #fff;
+  border: 3px solid rgb(13, 27, 33);
+}
+
+#clubContacs {
+  width: 90%;
+  margin: 100px auto 30px auto;
+  gap: 30px;
+}
+#clubContacs .clubText h5 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33.6px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+#clubContacs .contacts {
+  gap: 7px;
+}
+#clubContacs .contacts .forEachClub {
+  gap: 3px;
+}
+#clubContacs .contacts .forEachClub h6 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+}
+#clubContacs .contacts .forEachClub p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.77);
+}
+#clubContacs .contacts .forEachClub p span {
+  text-decoration: underline;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.77);
+}
+
+@media screen and (min-width: 576px) {
+  #clubContacs .contacts {
+    gap: 30px;
+  }
+  #clubContacs .contacts .forEachClub {
+    width: 299px;
+    height: 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #clubContacs {
+    gap: 30px;
+  }
+  #clubContacs .clubText h5 {
+    font-size: 42px;
+    line-height: 50.4px;
+  }
+  #clubContacs .contacts {
+    gap: 20px;
+  }
+  #clubContacs .contacts .forEachClub {
+    width: 355px;
+    height: 115px;
+    gap: 3px;
+  }
+  #clubContacs .contacts .forEachClub h6 {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #clubContacs .clubText h5 {
+    font-size: 42px;
+    line-height: 50.4px;
+  }
+  #clubContacs .contactV2 {
+    width: 86%;
+    gap: 50px;
+  }
+  #clubContacs .contactV2 .first {
+    gap: 20px;
+  }
+  #clubContacs .contactV2 .first .forEachClub {
+    width: 355px;
+    height: 115px;
+  }
+  #clubContacs .contactV2 .first .forEachClub h6 {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+  #clubContacs .contactV2 .second {
+    gap: 120px;
+  }
+  #clubContacs .contactV2 .second .forEachClub {
+    width: 355px;
+    height: 115px;
+  }
+  #clubContacs .contactV2 .second .forEachClub h6 {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+}
+#map {
+  width: 80%;
+  margin: 0 auto 100px auto;
+}
+#map .map-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 384px;
+}
+#map .map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+footer #conclusion {
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px;
+  gap: 32px;
+}
+footer #conclusion .essential aside {
+  gap: 24px;
+}
+footer #conclusion .essential aside a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.8px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+footer #conclusion .SB_logos {
+  gap: 24px;
+}
+footer #conclusion p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  opacity: 80%;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: rgb(13, 27, 33);
+}
+
+@media screen and (min-width: 576px) {
+  footer #conclusion .essential aside {
+    gap: 44px;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer #conclusion {
+    padding-bottom: 20px;
+  }
+  footer #conclusion .essential aside {
+    gap: 60px;
+  }
+}/*# sourceMappingURL=style.css.map */

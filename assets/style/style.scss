@@ -1,0 +1,759 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(243, 242, 229, 1) !important;
+}
+// !NAV-BAR
+header {
+  width: 100%;
+  height: 96px;
+  #navbar {
+    margin: 0 auto;
+    padding: 24px 0;
+    width: 90%;
+    .homeMiddle {
+      aside {
+        gap: 38px;
+        a {
+          font-family: "Ubuntu", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 23px;
+          color: rgba(13, 27, 33, 1);
+        }
+      }
+    }
+    .comeIn {
+      gap: 8px;
+      span {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20.68px;
+        color: rgba(0, 0, 0, 1);
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    height: 88px;
+    #navbar {
+      .idk {
+        display: block !important;
+        svg.hidden {
+          display: inline-block !important;
+        }
+      }
+      .homeMiddle {
+        display: none !important;
+        aside {
+          a {
+            display: none;
+          }
+        }
+      }
+      .comeIn {
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  header {
+    height: 106px;
+    #navbar {
+      .idk {
+        width: 33%;
+        display: block !important;
+        justify-content: flex-start;
+        svg.hidden {
+          display: inline-block !important;
+        }
+      }
+      .push {
+        width: 33%;
+      }
+      .homeMiddle {
+        display: none !important;
+        aside {
+          a {
+            display: none;
+          }
+        }
+      }
+      .comeIn {
+        width: 33%;
+        display: flex;
+        justify-content: flex-end !important;
+        span {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+// !EFFECT BUTTON
+#effectButton {
+  gap: 50px;
+  width: 90%;
+  margin: 50px auto;
+  .effect {
+    gap: 10px;
+    h1 {
+      text-align: center;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 34px;
+      line-height: 39.07px;
+      color: rgba(13, 27, 33, 1);
+      br {
+        display: none;
+      }
+    }
+    span {
+      text-align: center;
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 28px;
+      color: rgba(0, 0, 0, 1);
+      br {
+        display: none;
+      }
+    }
+  }
+  .withButton {
+    gap: 10px;
+    button {
+      width: 250px;
+      height: 43px;
+      gap: 1px;
+      border-radius: 26px;
+      border: 3px solid rgba(13, 27, 33, 1);
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 18.75px;
+    }
+    .textSVG {
+      gap: 5px;
+      p {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19.2px;
+        color: rgba(131, 161, 209, 1);
+        text-decoration: underline;
+      }
+    }
+  }
+}
+@media screen and (min-width: 640px) {
+  #effectButton {
+    .effect {
+      h1 {
+        font-size: 68px;
+        line-height: 78.13px;
+      }
+      span {
+        font-size: 26px;
+        line-height: 35px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1000px) {
+  #effectButton {
+    .effect {
+      h1 {
+        br {
+          display: unset;
+        }
+      }
+      span {
+        br {
+          display: unset;
+        }
+      }
+    }
+  }
+}
+
+// !CARDS AND BUTTON
+#cardsButton {
+  gap: 30px;
+  width: 90%;
+  margin: 0 auto 50px auto;
+  .cards {
+    gap: 20px;
+    .square {
+      img {
+        z-index: -1;
+        width: 143px;
+        height: 140px;
+        border-radius: 9px;
+        object-fit: cover;
+      }
+      p.x1 {
+        left: 28px;
+        top: 86px;
+        z-index: 1;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21.6px;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+      }
+      p.x2 {
+        left: 32px;
+        top: 103px;
+        z-index: 1;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21.6px;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+      }
+      p.x7 {
+        left: 32px;
+        top: 103px;
+        z-index: 1;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21.6px;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+      }
+      p.x3 {
+        left: 17px;
+        top: 110px;
+        z-index: 1;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21.6px;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+      }
+      p.x4 {
+        left: 33px;
+        top: 111px;
+        z-index: 1;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21.6px;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+      }
+      p.x5 {
+        left: 36px;
+        top: 91px;
+        z-index: 1;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21.6px;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+      }
+      p.x6 {
+        left: 25px;
+        top: 111px;
+        z-index: 1;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21.6px;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+  button {
+    width: 250px;
+    height: 43px;
+    gap: 1px;
+    border-radius: 26px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.75px;
+    box-shadow: 2px 4px 16px 0px rgba(161, 161, 161, 0.25);
+    background-color: #ffffff;
+  }
+}
+@media screen and (min-width: 576px) {
+  #cardsButton {
+    .cards {
+      .square {
+        img {
+          width: 299px;
+          height: 167px;
+        }
+        p.x1 {
+          left: 54px;
+          top: 126px;
+          font-size: 26px;
+          line-height: 31.2px;
+        }
+        p.x2 {
+          left: 89px;
+          top: 124px;
+          font-size: 26px;
+          line-height: 31.2px;
+        }
+        p.x7 {
+          left: 100px;
+          top: 127px;
+          font-size: 26px;
+          line-height: 31.2px;
+        }
+        p.x3 {
+          left: 68px;
+          top: 127px;
+          font-size: 26px;
+          line-height: 31.2px;
+        }
+        p.x4 {
+          left: 98px;
+          top: 130px;
+          font-size: 26px;
+          line-height: 31.2px;
+        }
+        p.x5 {
+          left: 52px;
+          top: 127px;
+          font-size: 26px;
+          line-height: 31.2px;
+        }
+        p.x6 {
+          left: 86px;
+          top: 128px;
+          font-size: 26px;
+          line-height: 31.2px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 700px) {
+  #cardsButton {
+    .cards {
+      gap: 40px;
+    }
+  }
+}
+
+// !SMART TARIFFS
+#smartTariffs {
+  width: 90%;
+  margin: 0 auto 30px auto;
+  gap: 20px;
+  .smart {
+    .visible {
+      gap: 12px;
+      h4 {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 33.6px;
+        text-align: center;
+        color: rgba(0, 0, 0, 1);
+      }
+      p {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        color: rgba(13, 27, 33, 1);
+      }
+    }
+  }
+  .tariffs {
+    gap: 20px;
+    .hidden {
+      .thickBorder {
+        padding: 20px;
+        border-radius: 15px;
+        .bgCol {
+          width: 271px;
+          height: 361px;
+          gap: 20px;
+          padding-top: 35px;
+          border-radius: 15px;
+          border: 6px solid;
+          border-image: linear-gradient(
+            225.4deg,
+            #fedc2a 0%,
+            #dd5789 48.12%,
+            #7a2c9e 93.59%
+          );
+          border-image-slice: 1;
+          h4 {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 36px;
+            text-align: center;
+            color: rgba(1, 1, 1, 1);
+          }
+          p {
+            width: 87%;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: rgba(13, 27, 33, 1);
+          }
+        }
+      }
+    }
+    .thickBorder {
+      padding: 20px;
+      background-color: white;
+      border-radius: 15px;
+      .range.t1 {
+        background: linear-gradient(135deg, #e25544 2.88%, #620c90 98.14%);
+      }
+      .range.t2 {
+        background: linear-gradient(135deg, #172368 2.88%, #e249af 100%);
+      }
+      .range.t3 {
+        background: linear-gradient(
+          225.4deg,
+          #fedc2a 0%,
+          #dd5789 48.12%,
+          #7a2c9e 93.59%
+        );
+      }
+      .range.t4 {
+        background: linear-gradient(47.23deg, #a632b0 3.53%, #faa681 95.41%);
+      }
+      .range.t5 {
+        background: linear-gradient(47.23deg, #a632b0 3.53%, #faa681 95.41%);
+      }
+      .range {
+        width: 271px;
+        height: 361px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding-top: 50px;
+        h3 {
+          font-family: "Ubuntu", sans-serif;
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 36px;
+          text-align: center;
+          color: rgba(255, 255, 255, 1);
+        }
+        .ruble {
+          h2 {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 42px;
+            text-align: center;
+            color: rgba(255, 255, 255, 1);
+          }
+          p {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-size: 21.69px;
+            line-height: 26.03px;
+            text-align: center;
+            color: rgba(255, 255, 255, 1);
+          }
+        }
+        button {
+          width: 193px;
+          height: 33px;
+          border-radius: 22px;
+          border: 0.83px solid rgba(255, 255, 255, 1);
+          font-family: "Roboto", sans-serif;
+          font-weight: 500;
+          font-size: 17px;
+          line-height: 19.92px;
+          background-color: #fff;
+          span {
+            background: linear-gradient(135deg, #e25544 2.88%, #620c90 98.14%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  #smartTariffs {
+    .smart {
+      width: 57%;
+      .visible {
+        h4 {
+          font-size: 42px;
+          line-height: 50.4px;
+        }
+        p {
+          font-size: 23px;
+          line-height: 31px;
+        }
+      }
+    }
+    .tariffs {
+      .thickBorder {
+        .range {
+          width: 212px;
+          height: 276px;
+          h3 {
+            font-size: 21px;
+            line-height: 25.2px;
+            color: rgba(255, 255, 255, 1);
+          }
+          .ruble {
+            h2 {
+              font-size: 24.76px;
+              line-height: 29.71px;
+            }
+            p {
+              font-size: 15.33px;
+              line-height: 18.39px;
+            }
+          }
+          button {
+            width: 136px;
+            height: 23px;
+            border-radius: 15.33px;
+            border: 0.59px solid rgba(255, 255, 255, 1);
+            font-size: 12px;
+            line-height: 14.06px;
+          }
+        }
+      }
+    }
+  }
+}
+.addingPanel {
+  width: 90%;
+  margin: 0 auto;
+  button.alone {
+    width: 181px;
+    height: 43px;
+    border-radius: 23px;
+    box-shadow: 2px 4px 16px 0px rgba(161, 161, 161, 0.25);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.75px;
+    color: rgba(13, 27, 33, 1);
+    background-color: #fff;
+    border: 3px solid rgba(13, 27, 33, 1);
+  }
+}
+
+// !CLUB CONTACTS
+#clubContacs {
+  width: 90%;
+  margin: 100px auto 30px auto;
+  gap: 30px;
+  .clubText {
+    h5 {
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 33.6px;
+      text-align: center;
+      color: rgba(0, 0, 0, 1);
+    }
+  }
+  .contacts {
+    gap: 7px;
+    .forEachClub {
+      gap: 3px;
+      h6 {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: rgba(0, 0, 0, 1);
+      }
+      p {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(0, 0, 0, 0.77);
+        span {
+          text-decoration: underline;
+          font-family: "Ubuntu", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: rgba(0, 0, 0, 0.77);
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 576px) {
+  #clubContacs {
+    .contacts {
+      gap: 30px;
+      .forEachClub {
+        width: 299px;
+        height: 100px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  #clubContacs {
+    gap: 30px;
+    .clubText {
+      h5 {
+        font-size: 42px;
+        line-height: 50.4px;
+      }
+    }
+    .contacts {
+      gap: 20px;
+      .forEachClub {
+        width: 355px;
+        height: 115px;
+        gap: 3px;
+        h6 {
+          font-size: 24px;
+          line-height: 28.8px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  #clubContacs {
+    .clubText {
+      h5 {
+        font-size: 42px;
+        line-height: 50.4px;
+      }
+    }
+    .contactV2 {
+      width: 86%;
+      gap: 50px;
+      .first {
+        gap: 20px;
+        .forEachClub {
+          width: 355px;
+          height: 115px;
+          h6 {
+            font-size: 24px;
+            line-height: 28.8px;
+          }
+        }
+      }
+      .second {
+        gap: 120px;
+        .forEachClub {
+          width: 355px;
+          height: 115px;
+          h6 {
+            font-size: 24px;
+            line-height: 28.8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// !GOOGLE MAP
+#map {
+  width: 80%;
+  margin: 0 auto 100px auto;
+  .map-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 384px;
+  }
+  .map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// !FOOTER
+footer {
+  #conclusion {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px;
+    gap: 32px;
+    .essential {
+      aside {
+        gap: 24px;
+        a {
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16.8px;
+          text-align: center;
+          color: rgba(0, 0, 0, 1);
+        }
+      }
+    }
+    .SB_logos {
+      gap: 24px;
+    }
+    p {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      opacity: 80%;
+      font-weight: 400;
+      font-size: 12px;
+      text-align: center;
+      color: rgba(13, 27, 33, 1);
+    }
+  }
+}
+@media screen and (min-width: 576px) {
+  footer {
+    #conclusion {
+      .essential {
+        aside {
+          gap: 44px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  footer {
+    #conclusion {
+      padding-bottom: 20px;
+      .essential {
+        aside {
+          gap: 60px;
+        }
+      }
+    }
+  }
+}
